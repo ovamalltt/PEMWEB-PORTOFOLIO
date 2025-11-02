@@ -1,0 +1,176 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Jika ingin memberi jarak hanya di sisi kiri dan kanan */
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    background-color: #0a2a3f;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling umum untuk tabel */
+table.project-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse; /* Menghilangkan jarak antar sel */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling untuk header tabel */
+table.project-table th {
+    background-color: #0a2a3f; /* Warna background yang keren */
+    color: #fff; /* Warna teks putih */
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1em;
+    border: 2px solid #ddd; /* Border untuk header */
+    text-transform: uppercase; /* Menjadikan teks header kapital */
+}
+
+/* Styling untuk isi tabel */
+table.project-table td {
+    background-color: #f9f9f9; /* Warna background sel data */
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Border untuk sel data */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect pada baris */
+table.project-table tr:hover td {
+    background-color: #f1f1f1; /* Menyorot baris saat hover */
+}
+
+/* Styling untuk baris genap */
+table.project-table tr:nth-child(even) td {
+    background-color: #eaeaea;
+}
+
+/* Border dan shadow untuk keseluruhan tabel */
+table.project-table {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk efek 3D */
+}
+
+/* Styling untuk footer tabel */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+    table.project-table {
+        font-size: 0.9em;
+    }
+}
+
+/* Styling umum untuk form */
+#contact {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0a2a3f;
+}
+
+form label {
+    font-size: 1em;
+}
+
+/* Styling untuk checkbox */
+input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+/* Styling untuk peringatan sukses */
+#alertSuccess {
+    display: none;
+    background-color: darkgreen;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        text-align: left;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
